@@ -190,6 +190,24 @@ Description: Linux kernel headers for 6.1.83-rt28-k3-var1+0bd16bd47287e882613f52
  This package provides kernel header files for 6.1.83-rt28-k3-var1+0bd16bd47287e882613f5290e8db4a150d50b3ac-1 on arm64.
  This is useful for people who need to build external modules.
 
+Package: linux-headers-6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1
+Source: ti-linux-kernel
+Version: 6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1
+Architecture: arm64
+Maintainer: Alishammat <zain.alabedin.alishammat@hhi.fraunhofer.de>
+Installed-Size: 50016
+Filename: ./pool/bookworm/l/linux-headers-6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1_6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1_arm64.deb
+Size: 8235252
+MD5sum: 7ea39f39c1c500c7f7490cd6fcd0b26a
+SHA1: 87ff912bd538e4dd3c4a512b786f8ae4e9546441
+SHA256: 8e2e0e02f784ea3ffaacd9d348a086bbd795a185beff4b7cc1af91ccf47c31f2
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1 on arm64
+ This package provides kernel header files for 6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1 on arm64.
+ This is useful for people who need to build external modules.
+
 Package: linux-image-6.1.46+940fab2b81d2867133444eed01ba1b20c294965d
 Source: ti-linux-kernel
 Version: 6.1.46+940fab2b81d2867133444eed01ba1b20c294965d-2
@@ -409,6 +427,43 @@ Description: Linux kernel debugging symbols for 6.1.83-rt28-k3-var1+0bd16bd47287
  This package will come in handy if you need to debug the kernel. It provides
  all the necessary debug symbols for the kernel and its modules.
 
+Package: linux-image-6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1
+Source: ti-linux-kernel
+Version: 6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1
+Architecture: arm64
+Maintainer: Alishammat <zain.alabedin.alishammat@hhi.fraunhofer.de>
+Installed-Size: 43930
+Depends: linux-headers-6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1
+Filename: ./pool/bookworm/l/linux-image-6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1_6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1_arm64.deb
+Size: 15201892
+MD5sum: 74601abf7fa7708e5294ad991a1e13ed
+SHA1: 62e6cc20f0ebef3f3572cdf7d5f8eb2bda3fa901
+SHA256: 495215d481de14e8eacc22b969d87cbc16ee2ba489331dbbb91a4f5efe2f4a54
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1
+ This package contains the Linux kernel, modules, and corresponding other
+ files, version: 6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1.
+
+Package: linux-image-6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1-dbg
+Source: ti-linux-kernel
+Version: 6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1
+Architecture: arm64
+Maintainer: Alishammat <zain.alabedin.alishammat@hhi.fraunhofer.de>
+Installed-Size: 207414
+Filename: ./pool/bookworm/l/linux-image-6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1-dbg_6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1_arm64.deb
+Size: 47942260
+MD5sum: 57bdafb0a42911fa53050345f2056e8a
+SHA1: 2a7a14ee8de9d1f44f09a85e8190a0424e77d24e
+SHA256: cb04410419b1f213ccee7f2f21dd3439bac17b355fc67a526dc28dc040dd35fe
+Section: debug
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel debugging symbols for 6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1
+ This package will come in handy if you need to debug the kernel. It provides
+ all the necessary debug symbols for the kernel and its modules.
+
 Package: linux-libc-dev
 Source: ti-linux-kernel
 Version: 6.1.46+940fab2b81d2867133444eed01ba1b20c294965d-2
@@ -521,6 +576,26 @@ Size: 1253280
 MD5sum: cde5d3ce0a83c40a66cd22b31eef629c
 SHA1: 9c9740f4f7694d8e7648009d64a497021690bcee
 SHA256: b60a0b2c9b78e089ab56b32e91e6563484fc061f951475df0ab51efc59b5c4d2
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: ti-linux-kernel
+Version: 6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1
+Architecture: arm64
+Maintainer: Alishammat <zain.alabedin.alishammat@hhi.fraunhofer.de>
+Installed-Size: 6503
+Provides: linux-kernel-headers
+Filename: ./pool/bookworm/l/linux-libc-dev_6.1.83-rt28-k3-var2+e6c17545e268142583bccecd5973ff15ca70aff1-1_arm64.deb
+Size: 1253228
+MD5sum: 01a44084dc9922e891821aca816d754e
+SHA1: ae476d428c16b78e15747fe04b63874e118ebd68
+SHA256: 1580e57653c9d9392be4c5696a8321c1f398b744dbed461c97141e00b0ac0132
 Section: devel
 Priority: optional
 Multi-Arch: same
